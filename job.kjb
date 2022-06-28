@@ -766,7 +766,7 @@ create index compound_origins_id_idx on compound_origins(compound_id);</sql>
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>1088</xloc>
+      <xloc>1248</xloc>
       <yloc>336</yloc>
       <attributes_kjc/>
     </entry>
@@ -806,6 +806,31 @@ create index compound_origins_id_idx on compound_origins(compound_id);</sql>
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>960</xloc>
+      <yloc>336</yloc>
+      <attributes_kjc/>
+    </entry>
+    <entry>
+      <name>exec_visualization.sh</name>
+      <description/>
+      <type>SHELL</type>
+      <attributes/>
+      <filename>D:\Practice\exec_visualization.sh</filename>
+      <work_directory/>
+      <arg_from_previous>N</arg_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <set_append_logfile>N</set_append_logfile>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <insertScript>N</insertScript>
+      <script/>
+      <loglevel>Basic</loglevel>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>1104</xloc>
       <yloc>336</yloc>
       <attributes_kjc/>
     </entry>
@@ -885,6 +910,15 @@ create index compound_origins_id_idx on compound_origins(compound_id);</sql>
     </hop>
     <hop>
       <from>Transformation 2</from>
+      <to>exec_visualization.sh</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>exec_visualization.sh</from>
       <to>Success</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
